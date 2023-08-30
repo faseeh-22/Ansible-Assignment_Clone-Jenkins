@@ -103,18 +103,18 @@ The pipeline will start executing stages defined in the Jenkinsfile.
    	 
 **NOTE:** Following are the contents of the ansible playbook "nginx.yml".
 ``` 
- - hosts: localhost
+- hosts: localhost
   connection: local
   become: true
   tasks:
-	- name: Install nginx
-  	apt:
-    	name: nginx
-    	state: latest
-	- name: Start the service
-  	service:
-    	name: nginx
-    	state: started
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: latest
+    - name: Start the service
+      service:
+        name: nginx
+        state: started
    ```	 
 
 
