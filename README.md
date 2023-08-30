@@ -148,10 +148,9 @@ pipeline {
 	
 **Stages:**
 
--Clone Repository: The pipeline's first stage is to clone the GitHub repository using the Git plugin.
+**-Clone Repository:** The pipeline's first stage is to clone the GitHub repository using the Git plugin.
 
--Run Playbook: The second stage uses a shell step to run the Ansible playbook using the ansible-playbook command. The "-b" flag indicates privilege escalation (become), and the "-i" flag
- specifies the inventory file (inventory.ini). The playbook itself is specified as "nginx.yml".
+**-Run Playbook:** The second stage uses a shell step to run the Ansible playbook using the ansible-playbook command. The "-b" flag indicates privilege escalation (become), and the "-i" flag specifies the inventory file (inventory.ini). The playbook itself is specified as "nginx.yml".
    	 
    	 
     	
